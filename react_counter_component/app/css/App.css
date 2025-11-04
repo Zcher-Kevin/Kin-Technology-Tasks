@@ -1,0 +1,41 @@
+* {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.App {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.Counter-Container {
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    max-width: max-content;
+    margin: 0 auto;
+}
+
+.Counter {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.Button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    /* center the text inside the button */
+    background-color: brown;
+    text-align: center;
+}

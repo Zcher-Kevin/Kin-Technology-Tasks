@@ -9,7 +9,9 @@ async function fetchAndLogTitles() {
         }
         // Parse the response as JSON
         const data = await response.json();
-        // Extract and log the titles of the first five posts 
+        
+        // Extract and log the titles of the first five posts
+        // store the titles into an array
         const titles = data.slice(0,5).map(post => post.title);
 
         console.log('============== Titles of the first five posts ==============');

@@ -1,23 +1,26 @@
+/* Global Styles */
 * {
     width: 100%;
     background-color: rgb(0, 0, 0);
 }
 
+/* App container styles */
 .App {
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    text-align: center; /* Center align TEXT */
+    justify-content: center; /* Center align CONTENT */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* vertical layout */
+    min-height: 100vh; /* Full viewport height */
 }
 
+/* Counter + Button container styles */
 .Counter-Container {
     display:flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    max-width: max-content;
-    margin: 0 auto;
+    max-width: max-content; /* Adjust the width based on the content */
+    margin: 0 auto; /* Auto center the container horizontally */
 }
 
 .Counter {
@@ -30,10 +33,10 @@
 
 .Button {
     font-size: 1rem;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 10px 20px; /* top/bottom and left/right padding */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
 
     /* center the text inside the button */
     background-color: brown;

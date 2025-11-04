@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Here is the task for **React Counter Component**
 
-## Getting Started
+I have created 3 files to allow me to complete this task 
 
-First, run the development server:
+1. page.tsx - the main .tsx file
+2. ./css/App.css - the style of the React app 
+3. ./components/counter.tsx - the counter component
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+In counter.tsx
+```tsx
+'use client' 
 ```
+As the app are using the React Server Components ```useState```, the app is server-rendered by default. ```'use client'``` introduces a server-client.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```tsx
+// State to hold the count value
+// setCount = function to update the count value
+// count = current value of the counter
+const [count, setCount] = useState(0);
+```
+Used to save the current value of the counter
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```tsx
+{/* Display the current count value */}
+<h1 className="Counter">Counter: {count}</h1>
+{/* Button to increment the count value */}
+<button onClick={() => setCount(count + 1)} className="Button">Increment</button>
+```
+create a ```<hr>``` for displaying the number of count that created
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+create a ```<button>``` for count += 1 

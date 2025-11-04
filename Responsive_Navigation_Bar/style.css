@@ -1,0 +1,67 @@
+nav {
+    background-color: #ffffff;
+    padding: 10px 20px;
+}
+
+/* menu styles */
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+/* list item styles */
+.menu li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+/* link styles */
+.menu a {
+    color: rgb(8, 52, 183);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* hover effect */
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Hidden the checkbox and show only on the smaller screen */
+.menu-toggle {
+    display: none; /* Hide the checkbox */
+}
+
+.menu-label {
+    display: none; /* Hide the icon with >= 768px */
+    color : rgb(0, 0, 0);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) { /* Note that the size should smaller than 768px */
+    
+    /* Stack vertically as dropdown */
+    .menu {
+        display: none;
+        flex-direction: column; 
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+
+    .menu li {
+        margin-bottom: 0.5rem;
+    }
+
+    .menu-label {
+        display: flex; /* Show the icon with < 768px */
+    }
+
+    /* Show the menu when the checkbox is checked */
+    .menu-toggle:checked ~ .menu {
+        display: flex;
+    }
+}

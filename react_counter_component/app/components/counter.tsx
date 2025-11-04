@@ -1,4 +1,6 @@
-import React, {useState} from "react";
+"use client";
+
+import React, {use, useState} from "react";
 import "./../css/App.css";
 
 // Counter Component
